@@ -15,8 +15,14 @@
 
     <title>Home - Overseeing Industries</title>
     <style>
-        table, th, td {
+
+        table.a, th.a, td.a {
             border: 10px solid black;
+            border-collapse: collapse;
+        }
+
+        table.b, th.b, td.b {
+            border: none;
             border-collapse: collapse;
         }
 
@@ -27,20 +33,75 @@
         h1.a {
             font-family: initial;
         }
+
+        h1.b {
+            font-family: Ebrima;
+            color: darkorange;
+            font-size: 25px;
+        }
+
+        h2.b {
+            font-family: Ebrima;
+            color: darkorange;
+            font-size: 20px;
+        }
+
+        th.b {
+            background-color: black;
+        }
+
+        th.c {
+            width: 50%;
+        }
+
+        div.a {
+            width: 50%;
+            color: darkorange;
+            font-family: Ebrima;
+            font-size: 20px;
+        }
+
+        hr.a {
+            background-color: darkorange;
+            width: 35%;
+            height: 10px;
+            border-radius: 8px;
+            border: 0px;
+        }
+
+        button.a {
+            width: 25%;
+            background-color: magenta;
+            border-radius: 8px;
+            border: 3px;
+            color: white;
+            font-size: 20px;
+            transition-duration: 0.4s;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+
+        button.a2:hover {
+            background-color: lime;
+            color: black;
+        }
+
     </style>
 </head>
 <body style="background-color: dimgrey; margin: 0; padding: 0">
-    <table style="width:100%; background-color:black">
+
+    <!-- Header -->
+
+    <table class="a" style="width:100%; background-color:black">
         <colgroup>
             <col span="3">
         </colgroup>
         <tr>
             <th align="left" style="width: 35%">
-                <img src="favicon-32x32.png" alt="Italian Trulli" style="width: 100%; height: 100%;"><img />
+                <img src="favicon-32x32.png" alt="Industry Logo" style="width: 100%; height: 100%;"><img />
             </th>
             <th align="right">
                 <iframe width="100%" height="720" class="ytplayer"
-                        src="https://www.youtube.com/embed/w0zMe3cXYnU?autoplay=1&mute=1&controls=0" 
+                        src="https://www.youtube.com/embed/w0zMe3cXYnU?autoplay=1&mute=1&controls=0"
                         frameborder="0">
                 </iframe>
             </th>
@@ -53,11 +114,45 @@
         <tr>
             <th>
                 <h1 class="a" style="font-size: 50px; color: lime; background-color: black">Overseeing Industries</h1>
+                <h2 class="a" style="color: magenta; background-color: black">We're always watching.</h2>
             </th>
         </tr>
     </table>
-    <iframe width="420" height="315"
-            src="https://www.youtube.com/watch?v=pPmRFE3p3hgautoplay=1&mute=1&controls=0">
-    </iframe>
+
+    <!-- Page -->
+
+    <br />
+    <br />
+    <table class="b" style="width: 100%; outline-width: 0px">
+        <colgroup>
+            <col span="0" />
+        </colgroup>
+        <tr>
+            <th class="c" >
+                <img src="info.png" alt="Info" style="width: 30%; height: 30%;" />
+                <h1 class="b" >Info</h1>
+                <hr class="a" />
+                <CENTER>
+                    <div class="a">Learn more about us. From where we started to where we are now.</div>
+                    <br />
+                    <button class="a a2" >Info</button>
+                </CENTER>
+                <br />
+                <br />
+            </th>
+            <th>
+                <img src="info.png" alt="Info" style="width: 30%; height: 30%;" />
+                <h1 class="b">Info</h1>
+                <hr class="a" />
+                <CENTER>
+                    <div class="a">Learn more about us. From where we started to where we are now.</div>
+                    <br />
+                    <button class="a a2">Info</button>
+                </CENTER>
+                <br />
+                <br />
+            </th>
+        </tr>
+    </table>
 </body>
 </html>
